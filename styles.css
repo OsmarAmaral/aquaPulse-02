@@ -1,0 +1,241 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(90deg, #4CAF50, #3e8e41);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s; /* Animação de entrada */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Transição de cor e transformação */
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo da seção inicial */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: slideIn 1s; /* Animação de entrada */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.produto-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s; /* Transição de transformação */
+}
+
+.produto-imagem:hover {
+    transform: scale(1.05); /* Efeito de zoom na imagem */
+}
+
+/* Estilo das funcionalidades */
+.funcionalidades {
+    padding: 20px;
+    background: #e7f3fe;
+    border-radius: 8px;
+    margin: 20px;
+    animation: fadeIn 1s; /* Animação de entrada */
+}
+
+.funcionalidades h3 {
+    margin-bottom: 15px;
+}
+
+.funcionalidades ul {
+    list-style: none;
+}
+
+.funcionalidades ul li {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Transição de fundo e transformação */
+}
+
+.funcionalidades ul li:hover {
+    background: #45a049;
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Estilo da seção "Como Funciona" */
+#como-funciona {
+    padding: 40px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    animation: fadeIn 1s; /* Animação de entrada */
+}
+
+.demonstracao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Transição de transformação */
+}
+
+video:hover {
+    transform: scale(1.05); /* Efeito de zoom no vídeo */
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    animation: fadeIn 1s; /* Animação de entrada */
+}
+
+/* Animações de entrada para o rodapé */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Efeitos de transição para o rodapé */
+footer {
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background: #444; /* Efeito de escurecimento ao passar o mouse */
+}
+
+/* Estilo de botões (se necessário) */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s; /* Transição de fundo e transformação */
+}
+
+.button:hover {
+    background: #45a049;
+    transform: scale(1.05); /* Efeito de zoom no botão */
+}
+
+/* Animação de rolagem suave para links internos */
+html {
+    scroll-behavior: smooth;
+}
+
+.funcionalidades ul li {
+    background: #3e8e41;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    header, .intro, .funcionalidades, #como-funciona, footer {
+        padding: 20px 10px;
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro, .funcionalidades, #como-funciona {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Mudando a fonte para uma mais moderna e agradável */
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Gradiente suave do azul-claro ao branco */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background: linear-gradient(90deg, #009688, #004d40); /* Gradiente mais suave para o cabeçalho */
+    color: white;
+}
+
+footer {
+    background: #004d40;
+    color: #e0f7fa;
+}
+
+footer:hover {
+    background: #00332e; /* Escurece levemente ao passar o mouse */
+}
